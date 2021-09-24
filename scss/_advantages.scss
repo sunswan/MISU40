@@ -1,0 +1,401 @@
+.advantages {
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $md3+px) {
+    height: 100vh;
+  }
+
+  &__ball-wrapper {
+    height: 490px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    @media (max-height: 830px) {
+      height: 330px;
+    }
+  }
+
+  &__text-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin-top: 60px;
+    padding: 0 12px;
+
+    @media (min-width: $md5+px) {
+      margin-top: 80px;
+    }
+    @media (min-width: $md3+px) {
+      margin-top: 40px;
+    }
+    @media (max-height: 830px) {
+      margin-top: 70px;
+      height: 300px;
+    }
+  }
+  &__red_ball {
+    height: 410px;
+    width: 410px;
+    border-radius: 50%;
+    background: linear-gradient(232.36deg, #ff3a44 15.53%, #c31162 169.53%);
+    z-index: 2;
+    border: none;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    @media (max-height: 830px) {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  &__phone {
+    position: absolute;
+    height: 515px;
+    width: 292px;
+    top: -21%;
+    left: 18%;
+    transition-property: top;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    @media (min-width: $md3+px) {
+      top: -16%;
+      left: 18%;
+    }
+    @media (max-height: 830px) {
+      height: 290px;
+      width: 162px;
+      top: 5%;
+      left: 25%;
+    }
+    &:hover {
+      @media (min-width: $md3+px) {
+        top: -30%;
+        left: 18%;
+      }
+      @media (max-height: 830px) {
+        top: -2%;
+        left: 25%;
+      }
+    }
+  }
+  &__title {
+    font-family: $font_Gilroy;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: $color__main_white;
+    line-height: 30px;
+    margin-bottom: 17px;
+    @media (min-width: $md5+px) {
+      font-size: 22px;
+    }
+    @media (min-width: $md4+px) {
+      font-size: 30px;
+      line-height: 86px;
+      margin-top: 0%;
+    }
+    @media (min-width: $md2+px) {
+      font-size: 36px;
+      line-height: 72px;
+    }
+    @media (max-height: 830px) {
+      line-height: 33px;
+      font-size: 20px;
+    }
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-family: $font_Gilroy;
+    color: $color__main_white;
+    text-align: center;
+    width: 100%;
+    line-height: 26px;
+
+    @media (min-width: $md3+px) {
+      line-height: 29px;
+      font-size: 16px;
+    }
+    @media (min-width: $md2+px) {
+      line-height: 38px;
+      width: 65%;
+    }
+    @media (max-height: 830px) {
+      line-height: 26px;
+      width: 88%;
+    }
+  }
+
+  &__btn-full {
+    display: none;
+    @media (min-width: $md3+px) {
+      @include buttonRed;
+      width: 310px;
+      height: 60px;
+      display: block;
+      margin-top: 3%;
+      line-height: 2.57;
+    }
+    @media (max-height: 830px) {
+      margin-top: 2%;
+      width: 280px;
+      height: 50px;
+    }
+  }
+
+  &__btn-mob {
+    display: block;
+    width: 155px;
+    height: 46px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(232.36deg, #ff3a44 15.53%, #c31162 169.53%);
+    color: $color__main_white;
+    font-family: $font_Gilroy;
+    font-size: 16px;
+    line-height: 2.5;
+    position: absolute;
+    bottom: 17%;
+    left: 0%;
+    z-index: 50;
+    &:hover {
+      background: $color__main_hover-red;
+    }
+    @media (min-width: $md5+px) {
+      width: 200px;
+    }
+    @media (min-width: $md3+px) {
+      display: none;
+    }
+    @media (max-height: 830px) {
+      width: 155px;
+    }
+  }
+}
+
+.phone-1 {
+  background: url(../assets/image/Iphone1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.phone-2 {
+  background: url(../assets/image/Iphone2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.phone-3 {
+  background: url(../assets/image/Iphone3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.phone-4 {
+  background: url(../assets/image/Iphone4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.red-btn-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.news-mob-wrapper {
+  width: 171px;
+  height: 149px;
+  display: block;
+  position: absolute;
+  bottom: 13%;
+  left: -19%;
+  z-index: 40;
+  @media (min-width: $md3+px) {
+    width: 278px;
+    height: 230px;
+    left: -8%;
+  }
+  background: url(../assets/image/news.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $md3+px) {
+    display: none;
+  }
+}
+
+.monitoring-wrapper {
+  width: 244px;
+  height: 100px;
+  position: absolute;
+  bottom: 57%;
+  left: -22%;
+  z-index: 40;
+  background: url(../assets/image/monitoring.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (min-width: $md3+px) {
+    width: 321px;
+    bottom: 57%;
+    left: 39%;
+  }
+}
+
+.btn-mob-white {
+  background: $color__main_white;
+  color: $color__main_red;
+  width: 158px;
+  left: 0%;
+  bottom: 12%;
+  @media (min-width: $md5+px) {
+    width: 212px;
+  }
+  @media (max-height: 830px) {
+    width: 158px;
+  }
+}
+
+.saturation-wrapper {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.0241em;
+  text-align: center;
+  height: 44px;
+  width: 160px;
+  position: absolute;
+  left: 41%;
+  top: 9%;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #54bdb0;
+
+  @media (min-width: $md3+px) {
+    height: 30px;
+    width: 292px;
+    left: 41%;
+    top: 18%;
+  }
+}
+.advantages-slider .slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.advantages-slider .slick-list {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  @media (min-width: $md3+px) {
+    width: 80%;
+  }
+}
+
+.advantages-slider {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.advantages-slider-item {
+  color: $color__main_white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  outline: none;
+  border: none;
+  @media (min-width: $md5+px) {
+    font-size: 16px;
+  }
+  @media (min-width: $md3+px) {
+    width: 65%;
+  }
+}
+
+.advantages-1 {
+  background-color: transparent;
+}
+.advantages-2 {
+  background-color: transparent;
+}
+.advantages-3 {
+  background-color: transparent;
+}
+.advantages-3 .advantages__subtitle {
+  @media (min-width: $md3+px) {
+    width: 80%;
+  }
+}
+
+.advantages-slider .slick-arrow {
+  top: 55%;
+  position: absolute;
+  z-index: 1000;
+  font-size: 0;
+  width: 24px;
+  height: 30px;
+  outline: none;
+  @media (min-width: $md3+px) {
+    top: 35%;
+  }
+}
+
+.advantages-slider .slick-arrow.slick-prev {
+  left: 1%;
+  background: url(../assets/icon/arrow-left-mob.png) 0 0 / 100% no-repeat;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  @media (min-width: $md3+px) {
+    display: block;
+    left: 16%;
+    background: url(../assets/icon/arrow-left.png) 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (min-width: $md2+px) {
+    left: 25%;
+  }
+}
+
+.advantages-slider .slick-arrow.slick-next {
+  right: 1%;
+  background: url(../assets/icon/arrow-right-mob.png) 0 0 / 100% no-repeat;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  @media (min-width: $md3+px) {
+    display: block;
+    right: 16%;
+    background: url(../assets/icon/arrow-right.png) 0 0 / 100% no-repeat;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  @media (min-width: $md2+px) {
+    right: 25%;
+  }
+}
+
+.advantages-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $md3+px) {
+    flex-direction: column;
+  }
+}

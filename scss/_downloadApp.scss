@@ -1,0 +1,25 @@
+.downloadApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  ul {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      height: 55px;
+      width: 190px;
+    }
+  }
+
+  &__misu-logo {
+    font-size: 38px;
+    margin-left: 5%;
+  }
+  &__copyright {
+    margin-top: 15%;
+  }
+}

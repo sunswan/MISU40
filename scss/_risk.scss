@@ -1,0 +1,274 @@
+.risk {
+  color: $color__main_white;
+  font-family: $font_Gilroy;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: $md1+px) {
+    flex-direction: row;
+    height: 1080px;
+  }
+
+  &__info-left {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4% 0 4%;
+
+    @media (min-width: $md1+px) {
+      width: 71%;
+      padding: 0 0 0 8%;
+    }
+  }
+
+  &__title {
+    width: 100%;
+    height: 15%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 64px;
+    padding: 80px 0px 0px 0px;
+    @media (min-width: $md1+px) {
+      font-size: 30px;
+    }
+  }
+
+  &__title::before {
+    content: "";
+    width: 66px;
+    height: 0px;
+    border: 1px solid #dd284a;
+    transform: rotate(-90deg);
+    margin-right: 18px;
+  }
+
+  &__title::after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-left: 12px;
+    background-image: url(../assets/icon/riskiconsun.png);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__info-wrapper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $md3+px) {
+      flex-direction: row;
+    }
+  }
+
+  &__info-block1 {
+    width: 100%;
+    margin: 0 2.5% 5% 0;
+    background: #171926;
+    border-radius: 10px;
+    position: relative;
+    @media (min-width: $md3+px) {
+      margin: 0 2.5% 0 0;
+    }
+    @media (min-width: $md1+px) {
+      width: 45%;
+      margin: 0 2.5% 0 0;
+    }
+
+    ul li {
+      padding: 10px 0px 10px 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 36px;
+      @media (min-width: $md1+px) {
+        font-size: 1.2vw;
+      }
+      // @media (max-height: 830px) {
+      //   font-size: 18px;
+      //   line-height: 26px;
+      // }
+    }
+
+    ul li::before {
+      display: block;
+      content: ".";
+      position: absolute;
+      left: 13px;
+    }
+    p {
+      padding: 10px 0px 10px 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 36px;
+      @media (min-width: $md1+px) {
+        font-size: 1.2vw;
+      }
+    }
+
+    span {
+      color: $color__main_red;
+    }
+  }
+
+  &__info-block2 {
+    width: 100%;
+    background: rgba(221, 40, 74, 0.8);
+    border-radius: 10px;
+    position: relative;
+    @media (min-width: $md1+px) {
+      width: 30%;
+    }
+    ul li {
+      padding: 10px 26px 20px 30px;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media (min-width: $md3+px) {
+        padding: 15px 17px 40px 30px;
+      }
+      @media (min-width: $md1+px) {
+        font-size: 1vw;
+      }
+    }
+    ul li::before {
+      display: block;
+      content: ".";
+      position: absolute;
+      left: 12px;
+    }
+    p {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      padding: 19px 17px 13px 17px;
+      @media (min-width: $md3+px) {
+        line-height: 40px;
+        padding: 19px 17px 40px 17px;
+      }
+      @media (min-width: $md1+px) {
+        font-size: 1vw;
+      }
+      @media (min-width: $md1+px) {
+        padding: 19px 17px 0px 17px;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    height: 25%;
+    border: 2px solid #dd284a;
+    box-sizing: border-box;
+    border-radius: 30px 0px 30px 30px;
+    margin-top: 2.5%;
+    text-align: center;
+    p {
+      font-size: 16px;
+      font-style: normal;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 12px 7px 0px 6px;
+      @media (min-width: $md3+px) {
+        padding: 12px 70px 15px 70px;
+      }
+      @media (min-width: $md1+px) {
+        font-size: 1.1vw;
+        padding: 17px 20px 0px 20px;
+        line-height: 37px;
+      }
+    }
+    span {
+      color: $color__main_red;
+      font-size: 18px;
+      font-style: normal;
+      line-height: 40px;
+      letter-spacing: 0em;
+      text-align: center;    }
+  }
+
+  &__info-right {
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/image/riskphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 5% 0 0 0;
+    @media (min-width: $md1+px) {
+      width: 29%;
+      height: 100%;
+      margin: 0 0 0 0;
+    }
+  }
+
+  &__about-list {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    @media (min-width: $md1+px) {
+      top: 105px;
+    }
+
+    ul li {
+      font-size: 18px;
+      margin: 0px 0px 42px 0px;
+      @media (min-width: $md1+px) {
+        margin: 40px 0px 50px 0px;
+      }
+    }
+  }
+
+  &__info-phone {
+    display: none;
+    @media (min-width: $md1+px) {
+      width: 245px;
+      height: 555px;
+      position: relative;
+      background: url(../assets/image/riskphone.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      align-items: center;
+      display: flex;
+    }
+    // margin: 30px 0px 0px 0px;
+  }
+
+  &__info-icon {
+    height: 60px;
+    width: 60px;
+    background: $color__main_red;
+    border-radius: 50%;
+    z-index: 35;
+    right: 14px;
+    top: 20px;
+    position: absolute;
+  }
+
+  &__info-icon::before {
+    content: "";
+    width: 17px;
+    height: 20px;
+    z-index: 10;
+    margin: 19px 0px 0px 22px;
+    background-image: url(../assets/icon/riskbell.png);
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.phone-wrapper {
+  position: absolute;
+  bottom: -4%;
+  left: -7%;
+}

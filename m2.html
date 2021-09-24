@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon  -->
+  <link rel="icon" type="image/x-icon" href="./assets/icon/favicon.png" />
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- Title  -->
+  <title>MISU M2</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container" id="headercontainer">
+      <a href="./index.html" class="menu__logo-set"><img src="./assets/icon/Logo.png" alt="logo" />
+        <p class="menu__logo">MISU</p>
+      </a>
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
+        </div>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li>
+              <a href="./index.html" class="menu__link"> Головна сторінка</a>
+            </li>
+            <li>
+              <a href="https://play.google.com/store/apps/details?id=com.WH.MISU&hl=ru&gl=US" target="_blank">
+                <img class="product-store" src="./assets/icon/GooglePlayBadge.png" alt="GooglePlay" />
+              </a>
+            </li>
+            <li>
+              <a href="https://apps.apple.com/ua/app/misu/id1516509504" target="_blank">
+                <img class="product-store" src="./assets/icon/AppStoreBadge.png" alt="AppStore" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section class="page__section section__m2">
+    <!--================Корзина товара=================-->
+
+    <!-- <div class="basket-cart">
+      <div class="basket_my_wrapper">
+        <div class="basket_image_wrapper">
+        </div>
+        <div class="counter_wrapper"><span id="total"> 0 </span></div>
+      </div>
+    </div> -->
+    <div class="product__area">
+      <!--================Карусель фото товара=================-->
+      <div class="container-carusel">
+        <div class="mySlides m2-black">
+          <div class="numbertext">1 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">2 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">3 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">4 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">5 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">6 / 7</div>
+          <span></span>
+        </div>
+
+        <div class="mySlides m2-black">
+          <div class="numbertext">7 / 7</div>
+          <span></span>
+        </div>
+        <!-- Кнопки переключения картинки -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Текст изображения -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Картинки превью -->
+        <div class="row">
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(1)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(2)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(3)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(4)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(5)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(6)"></span>
+          </div>
+          <div class="column m2-black">
+            <span class="demo cursor" onclick="currentSlide(7)"></span>
+          </div>
+        </div>
+      </div>
+      <!--================End Карусель фото товара=================-->
+
+      <!--================Форма заказа товара=================-->
+      <div class="product__option">
+        <h2>MISU watch M2</h2>
+        <h3>600 ₴</h3>
+        <div class="color-container">
+          <p class="color-title">Колір</p>
+          <div class="colors">
+            <span class="color m2black active" primary="#000000" color="black"></span>
+            <span class="color m2red" primary="#c03643" color="red"></span>
+            <span class="color m2pink" primary="#cf7c86" color="pink"></span>
+            <span class="color m2purple" primary="#683266" color="purple"></span>
+            <span class="color m2white" primary="#ffffff" color="white"></span>
+            <span class="color m2darkblue" primary="#24263d" color="dark-blue"></span>
+            <span class="color m2green" primary="#43542a" color="green"></span>
+
+          </div>
+        </div>
+        <a href="./form.html" target="_blank"><button id="increment" class="content-header__btn product-btn">
+          Замовити</button></a>
+      </div>
+      <!--================End Форма заказа товара=================-->
+    </div>
+    <!--================Описание товара + Таблица=================-->
+
+    <div class="product__data">
+
+      <div class="product__profile">
+
+        <p>Особливості MISU Watch M2:</p>
+        <ul>
+          <li>Сертифікація ISO Європа та Китай</li>
+          <li>
+            Спортивний моніторинг підрахунок кроків, споживання калорій,
+            відстань, 16 спортивних режимів, Записи GPS
+          </li>
+          <li>Прямий зв’язок з додатком MISU</li>
+          <li>
+            Моніторинг стану здоров’я контроль сну, цілодобовий контроль
+            пульсу, кров тиск, кисень у крові, температура тіла
+          </li>
+          <li>
+            Спортивний моніторинг підрахунок кроків, споживання калорій,
+            відстань, 8 спортивних режимів, записи треків GPS
+          </li>
+          <li>
+            Нагадування про дзвінок, питна вода, камера дистанційного
+            керування, SMS-нагадування, жіноче здоров’я, будильник
+          </li>
+          <li>
+            Програмне повідомлення push Facebook, Twitter, line, WeChat тощо
+          </li>
+        </ul>
+      </div>
+
+      <div class="product__table">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>
+                <h5>Розмір годинника （мм）</h5>
+              </td>
+              <td>
+                <h5>40,4 * 20,1 * 10,5</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Час зарядки</h5>
+              </td>
+              <td>
+                <h5>2 Г</h5>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h5>Час роботи</h5>
+              </td>
+              <td>
+                <h5>6-13 днів використання, 45 днів у режимі очікування</h5>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <h5>Вага годинника (г)</h5>
+              </td>
+              <td>
+                <h5>23,04г</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Сумісна система</h5>
+              </td>
+              <td>
+                <h5>Android 5.0 або IOS 8.0 і вище</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>TFT розмір екрану</h5>
+              </td>
+              <td>
+                <h5>0,96 TFT-LCD</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Акумулятор</h5>
+              </td>
+              <td>
+                <h5>Ємність 105mAh</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Метод зарядки</h5>
+              </td>
+              <td>
+                <h5>USB</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Розмір браслета</h5>
+              </td>
+              <td>
+                <h5>Загальна довжина 210 мм, регульована довжина 120-200 мм</h5>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h5>Матеріал зовнішнього вигляду</h5>
+              </td>
+              <td>
+                <h5>пластиковий браслет</h5>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!--================End таблица с описанием товара=================-->
+
+    <!-- start footer -->
+    <footer class="product__footer"></footer>
+    <!-- End footer -->
+  </section>
+
+  <!--Jquery-->
+  <script type="text/javascript" src="./js/jquery.min.js"></script>
+  <!-- JavaScript -->
+  <script src="./js/m20.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

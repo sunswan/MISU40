@@ -1,0 +1,29 @@
+@mixin buttonRed {
+  width: 278px;
+  height: 62px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(232.36deg, #ff3a44 15.53%, #c31162 169.53%);
+  color: $color__main_white;
+  font-family: $font_Gilroy;
+  font-size: 20px;
+  line-height: 1.57;
+  a {
+    text-decoration: none;
+    color: $color__main_white;
+    font-family: $font_Gilroy;
+    font-size: 20px;
+    line-height: 1.57;
+    display: block;
+  }
+
+  &:hover {
+    background: $color__main_hover-red;
+  }
+}
+
+
+

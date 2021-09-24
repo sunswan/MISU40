@@ -1,0 +1,136 @@
+/*------Блок пацієнта----------*/
+
+.content-user {
+  height: 100%;
+  flex-direction: column;
+  overflow: auto;
+  text-align: center;
+  justify-content: center;
+  // align-items: center;
+  color: $color__main_white;
+  font-family: $font_Gilroy;
+
+  @media (min-width: $md2+px) {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    padding: 3% 0 0% 6%;
+    text-align: left;
+    @media (min-width: $md3+px) {
+      font-size: 28px;
+      margin-left: 7%;
+      margin-top: 7%;
+
+    }
+  }
+
+  &__title::before {
+    content: "";
+    width: 66px;
+    height: 0px;
+    border: 1px solid #dd284a;
+    transform: rotate(-90deg);
+    margin-right: 18px;
+  }
+
+  h5 {
+    font-family: $font_Gilroy;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 3%;
+    word-spacing: 1px;
+    @media (min-width: $md3+px) {
+      font-size: 18px;
+    }
+  }
+
+  p {
+    font-family: $font_Gilroy;
+    font-size: 12px;
+    line-height: 22px;
+    color: $color__main_white-opasity;
+    text-align: left;
+    word-spacing: 1px;
+    @media (min-width: $md4+px) {
+      font-size: 14px;
+    }
+    @media (min-width: $md3+px) {
+      font-size: 16px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    ul {
+      z-index: 2;
+    }
+
+    // @media (min-width: $md1+px) {
+    //   margin-top: 3%;
+    // }
+
+    li {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      text-align: left;
+      margin: 5% 6%;
+
+      @media (min-width: $md4+px) {
+        margin: 5% 10%;
+      }
+      @media (max-height: 720px) {
+        margin: 2% 8%;
+      }
+
+      img {
+        width: 15px;
+      }
+      span {
+        padding-left: 3%;
+        padding-right: 6%;
+      }
+    }
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.iPhoneRightView {
+  display: none;
+
+  @media (min-width: $md2+px) {
+    display: block;
+    position: relative;
+    // height: 100%;
+    flex: 0 0 35%;
+    img {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      max-width: 100%;
+      height: 75%;
+      width: 75%;
+      padding: 10% 5% 2% 0;
+      object-fit: contain;
+    }
+  }
+}
+.block-left-view {
+  @media (min-width: $md2+px) {
+    height: 100%;
+    flex: 0 0 55%;
+  }
+}

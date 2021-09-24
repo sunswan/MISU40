@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="contact form example">
+	<link rel="stylesheet" href="./css/style-form.css">
+</head>
+
+<body>
+<div class="form-misu">
+	<form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+		<h2 class="g-form__title g-form__title_main">Залиште ваше замовлення</h2>
+		<h2 class="g-form__title g-form__title_respond"></h2>
+		<div class="g-form__preloader"></div>
+		<div class="g-form__inputs">
+			<fieldset class="g-form__input-wrapper">
+				<input class="g-form__input g-form__input_name" id="name" name="name" placeholder="Введіть ПІБ*" required>
+			</fieldset>
+
+			<fieldset class="g-form__input-wrapper">
+				<input class="g-form__input g-form__input_tel" id="tel" name="tel" placeholder="Введіть № телефону*">
+			</fieldset>
+
+			<fieldset class="g-form__input-wrapper">
+				<input id="email" name="email" type="email" value=""
+				required placeholder="Введіть email*"/>
+			</fieldset>
+
+					<fieldset class="g-form__input-wrapper">
+				<textarea id="message" name="message" rows="10"
+				placeholder="Введіть повідомлення"></textarea>
+			</fieldset>
+
+			<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+				<label for="honeypot">для спама!</label>
+				<input id="honeypot" type="text" name="honeypot" value="">
+			</fieldset>
+
+			<div class="g-form__button-wrapper">
+				<button class="g-form__button">Замовити</button>
+			</div>
+		</div>
+	</form>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./js/g-form.js"></script>
+
+	<!-- для маски номера телефона -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+	<script>
+		$(function() {
+			$('.g-form__input_tel').mask('+38(000)000-00-00');
+		});
+	</script>
+
+</div>
+</body>
+</html>
